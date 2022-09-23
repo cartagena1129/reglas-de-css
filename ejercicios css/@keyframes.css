@@ -1,0 +1,77 @@
+.fantasma{
+    position: relative;
+    width: 20px;
+    height: 60px;
+    background-color: rgb(28, 238, 168);
+    color: white;
+    padding: 5px 7px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    animation:mover 4s ease;
+}
+
+@keyframes mover {
+    0%{
+        top:0; left:0;
+    }
+    25%{
+       top:0;left: 500px;
+       background-color: transparent; color: red;
+    }
+    50%{
+        top:500px; left:500px;
+        background-color: gray; color: red;
+    }
+    75%{
+       top: 500px; left: 0px;
+       background-color: violet;color: red;
+    }
+    100%{
+       top: 0; left:0px;  
+       background-color: rgb(51, 164, 230); color: red;
+}
+
+ }   
+ .fantasma1,
+ .fantasma2,
+ .fantasma3,
+ .fantasma4,
+ .fantasma5{
+    position: relative;
+    width: 20px;
+    height: 60px;
+    background-color: rgb(28, 238, 168);
+    color: white;
+    padding: 5px 7px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    animation: carrera 3s ease;
+
+  }
+  .fantasma2{
+    background-color: blue;
+    animation: carrera 3s all;
+
+  }
+  .fantasma3{
+    background-color: brown;
+    animation: carrera 3s ease-in;
+  }
+  .fantasma4{
+    background-color: rgb(225, 240, 26);
+    animation: carrera 3s ease-out;
+  }
+  .fantasma5{
+    background-color: teal;
+    animation: carrera 3s ease-in-out;
+  }
+
+  @keyframes carrera{
+    0%{
+      top: 0; left: 0;
+  }
+  
+  100%{
+    top: 0; left: 500px;
+  }
+ }
